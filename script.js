@@ -14,5 +14,15 @@ function contar(){
             alert("Passo Invalido! Considerando 1")
             p = 1
         }
+        if (i < f){
+            //contagem crescente
+            for(var c = i; c <= f; c += p){
+                res.innerHTML += `${c} \u{1F929}`
+            }
+        }else {
+            for( var c = i; c >= f; c -= p){
+                res.innerHTML += `${c} \u{1F929}`
+            }
+        }
     }
 }
